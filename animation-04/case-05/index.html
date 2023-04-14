@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        main {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 400px;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        main > section {
+            width: 1600px;
+            height: 300px;
+            display: flex;
+            animation-name: slider;
+            animation-duration: 10s;
+            animation-play-state: running;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease;
+        }
+
+        div {
+            width: 400px;
+            height: 300px;
+        }
+
+        main > section > div:nth-child(1) {
+            background-image: url("images/WhatsApp Image 2023-04-08 at 2.23.59 PM (1).jpeg");
+        }
+
+        main > section > div:nth-child(2) {
+            background-image: url("images/WhatsApp Image 2023-04-08 at 2.23.59 PM.jpeg");
+
+        }
+
+        main > section > div:nth-child(3) {
+            background-image: url("images/WhatsApp Image 2023-04-08 at 2.23.58 PM (1).jpeg");
+
+        }
+
+        main > section > div:nth-child(4) {
+            background-image: url("images/WhatsApp Image 2023-04-08 at 2.23.59 PM (1).jpeg");
+        }
+
+        @keyframes slider {
+            0%, 20% {
+                transform: translateX(0%); 
+            }
+            25%, 45% {
+                transform: translateX(-25%);
+            }
+            55%, 80% {
+                transform: translateX(-50%);
+            }
+            85%, 100% {
+                transform: translateX(-75%);
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Assignment-5</title>
+</head>
+<body>
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+</body>
+</html>
